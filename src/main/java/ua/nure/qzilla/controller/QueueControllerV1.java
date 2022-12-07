@@ -12,6 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1/queues")
+@CrossOrigin
 public class QueueControllerV1 {
 
     @Autowired
