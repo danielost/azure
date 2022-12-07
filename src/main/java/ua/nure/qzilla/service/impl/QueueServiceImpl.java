@@ -42,7 +42,7 @@ public class QueueServiceImpl implements QueueService {
     @Override
     public void enroll(long id) {
         Optional<Queue> optionalQueue = queueRepository.findById(id);
-        if (optionalQueue.isEmpty()) {
+        if (!optionalQueue.isPresent()) {
             throw new NullPointerException("No such queue");
         }
 
