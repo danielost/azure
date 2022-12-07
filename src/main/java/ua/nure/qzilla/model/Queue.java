@@ -1,6 +1,6 @@
 package ua.nure.qzilla.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.time.LocalDate;
 
